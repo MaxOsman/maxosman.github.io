@@ -91,9 +91,9 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Pacman Combat</h3>
+												<h3>Engine Design</h3>
 											</header>
-											<p>Only a ghost from one team can kill the pacman of another. After a while, they will respawn at their house at the centre of the map.</p>
+											<p>Enemy and player attacks are tracked by a reliable collision detection system. Player, projectile and enemy data are stored in arrays in the zero page for improved performance. The state of these entities are tracked, including player powerup state, enemy type, animation progress, and HP. These can be altered at any time and the drawing routine will add or remove entities accordingly.</p>
 											
 											</ul>
 										</div>
