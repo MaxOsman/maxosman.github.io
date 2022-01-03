@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Pacman - Max Osman</title>
+		<title>DirectX11 Framework - Max Osman</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,6 +31,7 @@
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="nesgame.html">NES Game</a></li>
 							<li><a href="pacman.html">Pacman</a></li>
 							<li><a href="mario.html">Mario</a></li>
 							<li><a href="repair.html">Survive & Repair</a></li>
@@ -49,13 +50,13 @@
 								<img src="images/pacman0.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Pacman Team Deathmatch</h1>
+								<h1>DirectX11 Framework</h1>
 							</header>
 							<div class="content">
-								<p>My first year semester 1 project.<br />
-								   A re-imagining of Pacman as a multiplayer deathmatch arena. <br />
-								   Instead of a single player against ghosts, two teams of one Pacman and one ghost face each other.<br />
-								   Made in S2D.</p>
+								<p>My second year game engine project.<br />
+								   A 3D game engine capable of physics and rendering of various effects. <br />
+								   Designed with object-oriented principles to allow expansion.<br />
+								   </p>
 							</div>
 						</div>
 					</section>
@@ -75,9 +76,9 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Objectives</h3>
+												<h3>Physics</h3>
 											</header>
-											<p>The pacman of each team must eat more munchies than the other team within a time limit. Team up to kill an opponents' pacman to send them out of the match temporarily. Collect power-ups to give your team an advantage.</p>
+											<p>All objects in the game world have simulated physics. This includes basic mass, velocity, and acceleration. Additionally, objects can have drag act upon them, as well as friction for objects moving along the ground. Rotational acceleration can also be applied.</p>
 											
 											</ul>
 										</div>
@@ -90,9 +91,9 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Pacman Combat</h3>
+												<h3>Collisions</h3>
 											</header>
-											<p>Only a ghost from one team can kill the pacman of another. After a while, they will respawn at their house at the centre of the map.</p>
+											<p>The framework can process collisions between objects of differing shapes: Axis Aligned Bounding Boxes (AABBs) and Spheres. These can collide with themselves or each other. Once collided, a collision response is calculated determined by the angle and spped of the objects. The two objects will bounce off each other, with the heavier object not travelling as far.</p>
 											
 											</ul>
 										</div>
@@ -105,9 +106,9 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Power-ups</h3>
+												<h3>Particle System</h3>
 											</header>
-											<p>Occationally, power-ups will appear on the map for anyone to collect. For example, the red cherry lets a pacman move faster, and the yellow cherry makes munchies regenerate.</p>
+											<p>Particle systems are stored in the particle manager. Each particle system corresponds to a different particle effect, and manages the motion of the particles during the effect's runtime. The particles generated can either be full 3D models or billboarded sprites. The initial properties are all controlled by teh type of particle system sued. For example, flame particles are fast-rising light red particles. Additionally, dust particles are large brown particles that slowly rise, produced when the player jumps.</p>
 											
 											</ul>
 										</div>
@@ -115,7 +116,7 @@
 								</section>
 								<section>
 									
-										<iframe width="500" height="500" src="https://www.youtube.com/embed/-_G3S85FjUU">
+										<iframe width="540" height="540" src="https://www.youtube.com/embed/-_G3S85FjUU">
 										</iframe>
 									</a>
 									<div class="content">
@@ -123,7 +124,7 @@
 											<header class="major">
 												<h3>Showcase</h3>
 											</header>
-											<p>A short gameplay demo can be watched here.</p>
+											<p>A short demo can be watched here.</p>
 											
 											</ul>
 										</div>
@@ -137,9 +138,9 @@
 									<header class="major">
 										<h2>Development</h2>
 									</header>
-									<p>Made using Stafforshire University's OpenGL-based S2D framework. Code written using Visual Studio 2019. <br />
+									<p>Made using DirectX11, with models produced in Blender. Code written using Visual Studio 2019. <br />
 									<br />
-									VS2019, S2D, C++.</p>
+									VS2019, DX11, C++.</p>
 									
 									</ul>
 								</div>
@@ -158,7 +159,7 @@
 								<li><a href="https://www.linkedin.com/in/max-osman-126a37197/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Max Osman</li><li>2020 </a></li>
+								<li>&copy; Max Osman</li><li>2022 </a></li>
 							</ul>
 						</div>
 					</footer>
